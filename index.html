@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raman Pratap — Portfolio</title>
+    <meta
+      name="description"
+      content="Raman Pratap — Java Full Stack Developer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <div class="mark" id="avatarContainer">
+            <!-- Avatar image will be placed here; initials shown by default -->
+            <img id="avatarImg" alt="avatar preview" style="display: none" />
+            <div id="avatarInitials">RP</div>
+          </div>
+          <div>
+            <div style="font-weight: 700">Raman Pratap</div>
+            <div style="font-size: 12px; color: var(--muted)">
+              Java • Spring • Full Stack
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <!-- small upload control next to header: hidden input + label -->
+      <div
+        style="display: flex; gap: 8px; align-items: center; margin-top: 8px"
+      >
+        <input
+          id="avatarInput"
+          type="file"
+          accept="image/*"
+          style="display: none"
+        />
+        <label for="avatarInput" class="btn secondary" style="cursor: pointer"
+          >Upload Photo</label
+        >
+        <button id="removeAvatar" class="btn" style="display: none">
+          Remove
+        </button>
+      </div>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="intro">
+          <h1 class="reveal">
+            Hi, I'm <span style="color: var(--accent)">Raman</span>
+          </h1>
+          <h2 class="reveal" id="type-role">
+            <span id="roleText">Full Stack Developer</span>
+            <span class="cursor"></span>
+          </h2>
+          <p class="reveal" style="color: var(--muted); margin-top: 14px">
+            I build reliable web apps using Java, Spring Boot and modern
+            frontend tools. I enjoy turning ideas into code and learning new
+            technologies.
+          </p>
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Hire Me</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div class="avatar" id="profileAvatar">
+              <img
+                id="profileAvatarImg"
+                alt="profile"
+                style="
+                  display: none;
+                  width: 84px;
+                  height: 84px;
+                  border-radius: 12px;
+                  object-fit: cover;
+                "
+              />
+              <div
+                id="profileAvatarInitials"
+                style="
+                  width: 84px;
+                  height: 84px;
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 700;
+                  font-size: 20px;
+                "
+              >
+                RP
+              </div>
+            </div>
+            <div>
+              <div style="font-weight: 700">Raman Pratap</div>
+              <div style="font-size: 13px; color: var(--muted)">
+                Java Full Stack Developer
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div style="font-weight: 700">6+</div>
+              <div style="font-size: 12px; color: var(--muted)">Projects</div>
+            </div>
+            <div class="stat">
+              <div style="font-weight: 700">3+</div>
+              <div style="font-size: 12px; color: var(--muted)">Skills</div>
+            </div>
+          </div>
+          <div style="margin-top: 12px; color: var(--muted); font-size: 13px">
+            Based in Pune, India
+          </div>
+        </aside>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill reveal">
+            <div style="font-weight: 700">Java</div>
+            <div style="color: var(--muted); font-size: 13px">
+              Core Java, OOP, Collections
+            </div>
+            <div class="bar"><i data-width="85%"></i></div>
+          </div>
+          <div class="skill reveal">
+            <div style="font-weight: 700">Spring Boot</div>
+            <div style="color: var(--muted); font-size: 13px">
+              REST APIs, Spring Data JPA
+            </div>
+            <div class="bar"><i data-width="80%"></i></div>
+          </div>
+          <div class="skill reveal">
+            <div style="font-weight: 700">Frontend</div>
+            <div style="color: var(--muted); font-size: 13px">
+              HTML, CSS, JS, React (basics)
+            </div>
+            <div class="bar"><i data-width="70%"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h3 class="section-title">Selected Projects</h3>
+        <div class="projects">
+          <article class="project reveal">
+            <h4>Doctor Appointment App</h4>
+            <p>
+              Full-stack app built with Spring Boot, MySQL — appointment booking
+              + notifications.
+            </p>
+            <p style="margin-top: 10px">
+              <a href="#">GitHub</a> • <a href="#">Live</a>
+            </p>
+          </article>
+
+          <article class="project reveal">
+            <h4>Expense Tracker</h4>
+            <p>
+              Firebase-based expense tracker with authentication and charts.
+            </p>
+            <p style="margin-top: 10px">
+              <a href="#">GitHub</a> • <a href="#">Live</a>
+            </p>
+          </article>
+
+          <article class="project reveal">
+            <h4>Accident Alert System</h4>
+            <p>
+              Minor academic project using sensors & alerts (project report
+              available).
+            </p>
+            <p style="margin-top: 10px"><a href="#">Repo</a></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h3 class="section-title">Contact</h3>
+
+        <!-- Contact form: supports Formspree (action) and Netlify Forms (data-netlify) -->
+        <form
+          class="contact-card reveal"
+          id="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
+          <div style="flex: 1; min-width: 220px">
+            <label style="font-weight: 700; display: block">Your name</label>
+            <input
+              name="name"
+              type="text"
+              required
+              placeholder="Your name"
+              style="
+                width: 100%;
+                margin-top: 6px;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                background: transparent;
+                color: inherit;
+              "
+            />
+
+            <label style="font-weight: 700; display: block; margin-top: 10px"
+              >Email</label
+            >
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="you@example.com"
+              style="
+                width: 100%;
+                margin-top: 6px;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                background: transparent;
+                color: inherit;
+              "
+            />
+          </div>
+
+          <div style="flex: 1; min-width: 220px">
+            <label style="font-weight: 700; display: block">Message</label>
+            <textarea
+              name="message"
+              required
+              placeholder="How can I help you?"
+              style="
+                width: 100%;
+                height: 120px;
+                margin-top: 6px;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                background: transparent;
+                color: inherit;
+              "
+            ></textarea>
+
+            <button
+              type="submit"
+              class="btn"
+              style="display: inline-block; margin-top: 10px"
+            >
+              Send Message
+            </button>
+            <div
+              id="form-status"
+              style="margin-top: 10px; color: var(--accent); display: none"
+            ></div>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Raman Pratap — Built with ❤️ •
+        <span style="color: var(--muted)">HTML • CSS • JS</span>
+      </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
